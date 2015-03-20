@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/rawouter/bigdatabroker/caaclient/caaclient'
+let g:netrw_dirhist_2='/Users/rawouter/bigdatabroker/task_libs/python/onep'
+let g:netrw_dirhist_3='/Users/rawouter/bigdatabroker/vagrant-test/shared/standalone/big_data_broker/webservice/node_modules'
+let g:netrw_dirhist_4='/Users/rawouter/bigdatabroker/vagrant-test/shared/standalone/big_data_broker/webservice/node_modules/cisco-sso'
+let g:netrw_dirhist_5='/Users/rawouter/Documents/Arduino/libraries/PusherClient/HashMap'
+let g:netrw_dirhist_6='/Users/rawouter/.vim/bundle/vim-colors-solarized'
+let g:netrw_dirhist_7='/Users/rawouter/code/moodies/python/PythonPusherClient/tests'
+let g:netrw_dirhist_8='/Users/rawouter/code/moodies/python/PythonPusherClient/tests/pusherserver'
+let g:netrw_dirhist_9='/Users/rawouter/code/moodies/python'
