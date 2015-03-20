@@ -1,3 +1,8 @@
+#
+# Created by Raphael Wouters on jeu,09 jan 2003
+# bashrc@raph.udev.org
+#
+
 #export LC_MESSAGES="fr_BE.UTF-8"
 #export LC_CTYPE="fr_BE.UTF-8"
 #export LC_TIME="fr_BE.UTF-8"
@@ -18,6 +23,7 @@ export PATH=/home/rawouter/bin:/home/rawouter/local/bin:/home/rawouter/local/scr
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 
+
 alias p='ptpython --vi'
 alias ls='ls -G'
 alias ll='ls -lrt'
@@ -36,6 +42,7 @@ alias grep="grep --color"
 export PROMPT_USER_COLOR="\[\e[0;32m\]"
 export PROMPT_PREPOSITION_COLOR=""
 export PROMPT_DEVICE_COLOR=""
+export PROMPT_VENV_COLOR="\[\e[0;36m\]"
 export PROMPT_DIR_COLOR="\[\e[0;33m\]"
 export PROMPT_GIT_STATUS_COLOR=""
 export PROMPT_GIT_PROGRESS_COLOR=""

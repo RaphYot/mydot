@@ -22,6 +22,9 @@ set hlsearch
 set list
 set listchars=tab:»·,trail:·
 
+nnoremap <F1> :set invpaste paste?<CR>
+set pastetoggle=<F1>    " toggle paste
+
 set showmode
 
 " Python
