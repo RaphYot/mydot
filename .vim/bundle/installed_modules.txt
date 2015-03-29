@@ -1,1 +1,5 @@
-ls -la
+auto-pairs
+jedi-vim
+pyflakes-vim
+supertab
+vim-colors-solarized
