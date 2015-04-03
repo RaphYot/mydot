@@ -39,11 +39,15 @@ alias grep="grep --color"
 #PROMPT_GIT_STATUS_COLOR - Color for git branch and symbol (e.g. master)
 #PROMPT_GIT_PROGRESS_COLOR - Color for in progress git actions (e.g. [merge])
 #PROMPT_SYMBOL_COLOR - Color for prompt symbol (e.g. $)
+if [ -n "$SSH_CLIENT"  ] || [ -n "$SSH_TTY"  ]; then
+    export PROMPT_DIR_COLOR="\[\e[0;31m\]"
+else
+    export PROMPT_DIR_COLOR="\[\e[0;33m\]"
+fi
+export PROMPT_DEVICE_COLOR=""
 export PROMPT_USER_COLOR="\[\e[0;32m\]"
 export PROMPT_PREPOSITION_COLOR=""
-export PROMPT_DEVICE_COLOR=""
 export PROMPT_VENV_COLOR="\[\e[0;36m\]"
-export PROMPT_DIR_COLOR="\[\e[0;33m\]"
 export PROMPT_GIT_STATUS_COLOR=""
 export PROMPT_GIT_PROGRESS_COLOR=""
 export PROMPT_SYMBOL_COLOR="\[\e[0;31m\]"
