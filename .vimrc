@@ -35,10 +35,14 @@ au FileType python set shiftwidth=4                      " tab with << and >>
 au FileType python set softtabstop=4                     " also for <BS>
 au FileType python set et                                " expand tab, insert spaces instead of <tab>
 
+au Filetype yaml set et
+au Filetype yaml set tabstop=2
+
+
 " other
-au BufRead *.txt set tw=78
-au BufRead *.txt set fo+=t
-au BufRead *.txt set fo+=a " refomart
+"au BufRead *.txt set tw=78
+"au BufRead *.txt set fo+=t
+"au BufRead *.txt set fo+=a " refomart
 au BufReadPost * if line("'\"") | exe "normal '\"" | endif
 au! BufNewFile,BufRead *.ino,*.pde setlocal ft=arduino
 au BufNewFile,BufRead *.less set filetype=less
@@ -59,3 +63,16 @@ function! RunPythonScript()
     execute "!python %"
 endfunction
 
+" Go commands - https://github.com/fatih/vim-go
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+au FileType go nmap <Leader>b <Plug>(go-doc-browser)
+au FileType go nmap <Leader>i <Plug>(go-info)
+au FileType go nmap <Leader>s <Plug>(go-implements)
+au FileType go nmap <Leader>e <Plug>(go-rename)
+au FileType go nmap <Leader>d <Plug>(go-doc)

@@ -276,13 +276,6 @@ function virtualenv_info(){
 # disable the default virtualenv prompt change
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-#clock
-print_pre_prompt ()
-{
-    printf "\e[1;37m%$(($COLUMNS))s" "$(date +%H:%M)"
-}
-export PROMPT_COMMAND=print_pre_prompt
-
 # Define the sexy-bash-prompt
 #PS1="\[$sexy_bash_prompt_user_color\]\u\[$sexy_bash_prompt_reset\] \
 #\[$sexy_bash_prompt_preposition_color\]at\[$sexy_bash_prompt_reset\] \
