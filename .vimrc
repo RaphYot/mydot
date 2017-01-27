@@ -86,8 +86,8 @@ map <leader>b :NERDTreeToggle<CR>
 
 " easymotion
 "" move anywhere
-nmap s         <Plug>(easymotion-bd-w)
-vmap s         <Plug>(easymotion-bd-w)
+nmap f         <Plug>(easymotion-bd-w)
+vmap f         <Plug>(easymotion-bd-w)
 nmap <leader>s <Plug>(easymotion-overwin-w)
 vmap <leader>s <nop>
 " move between lines
