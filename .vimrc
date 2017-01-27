@@ -50,6 +50,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 "" My Bundles here:
 "" Refer to |:NeoBundle-examples|.
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'davidhalter/jedi'
 NeoBundle 'davidhalter/jedi-vim'
@@ -74,6 +75,7 @@ filetype plugin indent on
 NeoBundleCheck
 
 " NerdTREE
+let NERDTreeShowHidden=1
 "" auto open if no files
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -86,22 +88,18 @@ map <leader>b :NERDTreeToggle<CR>
 "" move anywhere
 nmap s         <Plug>(easymotion-bd-w)
 vmap s         <Plug>(easymotion-bd-w)
-nmap <leader>s <Plug>(easymotion-overwin-f2)
+nmap <leader>s <Plug>(easymotion-overwin-w)
 vmap <leader>s <nop>
 " move between lines
 " (also between empty lines with indentation)
-nmap <leader>l <Plug>(easymotion-bd-jk)
-vmap <leader>l <Plug>(easymotion-bd-jk)
-nmap <Space>l  <Plug>(easymotion-overwin-line)
-vmap <Space>l  <Nop>
+nmap <leader>l <Plug>(easymotion-overwin-line)
+vmap <leader>l <Plug>(easymotion-overwin-line)
 " move over the line
 nmap <leader>z <Plug>(easymotion-lineanywhere)
 vmap <leader>z <Plug>(easymotion-lineanywhere)
 " move to place with specific symbols
-nmap <leader>w <Plug>(easymotion-bd-f2)
-vmap <leader>w <Plug>(easymotion-bd-f2)
-nmap <Space>w  <Plug>(easymotion-overwin-f2)
-vmap <Space>w  <Nop>
+nmap <leader>w <Plug>(easymotion-overwin-f2)
+vmap <leader>w <Plug>(easymotion-overwin-f2)
 " turn on visual mode and select to specific place
 nmap <leader>v v<Plug>(easymotion-bd-w)
 nmap <leader>V V<Plug>(easymotion-bd-jk)
@@ -149,14 +147,10 @@ endfunction
 
 " Go commands - https://github.com/fatih/vim-go
 au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>bu <Plug>(go-build)
+au FileType go nmap <leader>gb <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-au FileType go nmap <Leader>b <Plug>(go-doc-browser)
+au FileType go nmap <Leader>d <Plug>(go-doc-browser)
 au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>s <Plug>(go-implements)
-au FileType go nmap <Leader>e <Plug>(go-rename)
-au FileType go nmap <Leader>d <Plug>(go-doc)
+au FileType go nmap <Leader>gi <Plug>(go-implements)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
