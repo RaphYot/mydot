@@ -88,8 +88,10 @@ map <leader>b :NERDTreeToggle<CR>
 "" move anywhere
 nmap f         <Plug>(easymotion-bd-w)
 vmap f         <Plug>(easymotion-bd-w)
-nmap <leader>s <Plug>(easymotion-overwin-w)
-vmap <leader>s <nop>
+nmap F <Plug>(easymotion-bd-jk)
+vmap F <Plug>(easymotion-bd-jk)
+nmap <leader>f <Plug>(easymotion-overwin-w)
+vmap <leader>f <nop>
 " move between lines
 " (also between empty lines with indentation)
 nmap <leader>l <Plug>(easymotion-overwin-line)
@@ -101,9 +103,8 @@ vmap <leader>z <Plug>(easymotion-lineanywhere)
 nmap <leader>w <Plug>(easymotion-overwin-f2)
 vmap <leader>w <Plug>(easymotion-overwin-f2)
 " turn on visual mode and select to specific place
-nmap <leader>v v<Plug>(easymotion-bd-w)
-nmap <leader>V V<Plug>(easymotion-bd-jk)
-nmap <leader><C-v> <C-v><Plug>(easymotion-bd-w)
+"nmap <leader>v v<Plug>(easymotion-bd-w)
+"nmap <leader>V V<Plug>(easymotion-bd-jk)
 " Search
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
