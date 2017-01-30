@@ -22,7 +22,7 @@ set hlsearch
 set list
 set listchars=tab:»·,trail:·
 let mapleader = ','
-
+set number
 
 " vim usability
 nnoremap <F1> :set invpaste paste?<CR>
@@ -86,12 +86,12 @@ map <leader>b :NERDTreeToggle<CR>
 
 " easymotion
 "" move anywhere
-nmap f         <Plug>(easymotion-bd-w)
-vmap f         <Plug>(easymotion-bd-w)
-nmap F <Plug>(easymotion-bd-jk)
-vmap F <Plug>(easymotion-bd-jk)
-nmap <leader>f <Plug>(easymotion-overwin-w)
-vmap <leader>f <nop>
+nmap k         <Plug>(easymotion-bd-w)
+vmap k         <Plug>(easymotion-bd-w)
+nmap l <Plug>(easymotion-bd-jk)
+vmap l <Plug>(easymotion-bd-jk)
+nmap <leader>k <Plug>(easymotion-overwin-w)
+vmap <leader>k <nop>
 " move between lines
 " (also between empty lines with indentation)
 nmap <leader>l <Plug>(easymotion-overwin-line)
